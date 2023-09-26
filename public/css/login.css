@@ -1,0 +1,143 @@
+/* CSS Document */
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('/fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+	src: url('//fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */ url('/fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/ url('/fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('/fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+	src: url('//fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */ url('/fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/ url('/fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('/fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+	src: url('/fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */ url('/fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/ url('/fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('/fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+	src: url('/fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */ url('/fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/ url('/fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('/fonts/eot/IRANSansWeb(FaNum).eot');
+	src: url('/fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),  /* IE6-8 */ url('/fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/ url('/fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('/fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:IRANSans;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background: #e7ebee; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.login-box{
+    background:white;
+    /* box-shadow: -1px 0px 20px 4px gray; */
+    /* box-shadow: 1px 5px 10px 5px #000000    ; */
+    height:80vh;
+    width:40%;
+    margin:auto;
+}
+.box-header {
+    height:20vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e7ebee;
+}
+.box-body{
+    height:40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-body form{
+    width: 100%;
+    text-align: center;
+}
+.box-body form div{
+    width:50%;
+    margin: auto;
+    border:1px solid gray;
+    border-radius:5px;
+    margin-bottom: 5px;
+}
+.box-body input[type="password"],.box-body input[type="text"]{
+    width: 90%;
+    padding:15px;
+    font-family:inherit;
+    text-align:right;
+    outline:none;
+    background:transparent;
+    border:none;
+}
+.box-body input[type="submit"]{
+    width:20%;
+    padding:10px;
+    margin-top:30px;
+    font-family: inherit;
+    outline: none;
+    background:none;
+    color:#4e5dd3;
+    border:1px solid #5867dd; 
+    border-radius: 5px;
+    cursor:pointer;
+}
+.box-body input[type="submit"]:hover{
+    background: #5867dd;
+    color:white;
+    transition: 0.2s;
+}
+.box-header h1{
+    font-size:30px;
+    text-align: center;
+    padding:15px 0px;
+}
+
+@media(max-width:1300px)
+{
+    .login-box{
+        width: 60%;
+    }
+}
+@media(max-width:800px)
+{
+    .login-box{
+        width: 80%;
+    }
+    .box-body form div{
+        width: 70%;
+    }
+}
+@media(max-width:600px)
+{
+    .login-box{
+        width: 90%;
+    }
+    .box-body form div{
+        width: 80%;
+    }
+}
