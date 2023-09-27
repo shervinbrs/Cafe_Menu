@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Panel\Dashboard;
 use App\Http\Controllers\Panel\Menu_Cont;
+use App\Http\Controllers\Panel\Category_Cont;
 
 Route::middleware(['auth','admin'])->group(function(){
 
@@ -19,4 +20,16 @@ Route::middleware(['auth','admin'])->group(function(){
     //Menu Delete
     Route::get('/admin/menu/delete/{menu:id}',[Menu_Cont::class,'delete']);
 
+
+    //Category List
+    Route::get('/admin/category/list',[Category_Cont::class,'list'])->name('category_list');
+    //Category Create
+    Route::get('/admin/category/create',[Category_Cont::class,'showCreate'])->name('category_create');
+    Route::post('/admin/category/create',[Category_Cont::class,'create']);
+    //Category Edit
+    Route::get('/admin/category/edit/{category:id}',[Category_Cont::class,'showEdit'])->name('category_edit');
+    Route::post('/admin/category/edit/{category:id}',[Category_Cont::class,'edit']);
+    //Category Delete
+    Route::get('/admin/category/delete/{category:id}',[Category_Cont::class,'delete']);
+    
 });

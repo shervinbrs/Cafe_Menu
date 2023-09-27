@@ -11,7 +11,7 @@ class Menu_Cont extends Controller
 {
     public function list()
     {
-        return view('panel.menu.list')->with('menus',Menu::paginate());
+        return view('panel.menu.list')->with('menus',Menu::paginate(20));
     }
     public function showCreate()
     {

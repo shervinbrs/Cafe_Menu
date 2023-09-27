@@ -42,6 +42,11 @@
                 <li><a href="/admin/menu/create">افزودن</a><i class="fa fa-plus"></i></li>
                 <li><a href="/admin/menu/list">لیست منو ها</a><i class="fa fa-list"></i></li>
             </div>
+            <li class="collapase"><a>دسته بندی ها</a><i class="fa fa-list"></i><span class="fa fa-angle-down"></span></li>
+            <div class="submenu">
+                <li><a href="/admin/category/create">افزودن</a><i class="fa fa-plus"></i></li>
+                <li><a href="/admin/category/list">لیست دسته بندی ها</a><i class="fa fa-list"></i></li>
+            </div>
         </ul>
     </div>
     <div class="content">
