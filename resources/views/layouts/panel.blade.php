@@ -37,6 +37,11 @@
         </div>
         <ul id="menu">
             <li class="active-nav"><a href="/admin">داشبورد</a><i class="fa fa-home"></i></li>
+            <li class="collapase"><a>منو ها</a><i class="fa fa-list-alt"></i><span class="fa fa-angle-down"></span></li>
+            <div class="submenu">
+                <li><a href="/admin/menu/create">افزودن</a><i class="fa fa-plus"></i></li>
+                <li><a href="/admin/menu/list">لیست منو ها</a><i class="fa fa-list"></i></li>
+            </div>
         </ul>
     </div>
     <div class="content">
