@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Panel\Dashboard;
 use App\Http\Controllers\Panel\Menu_Cont;
 use App\Http\Controllers\Panel\Category_Cont;
+use App\Http\Controllers\Panel\Item_Cont;
 
 Route::middleware(['auth','admin'])->group(function(){
 
@@ -31,5 +32,17 @@ Route::middleware(['auth','admin'])->group(function(){
     Route::post('/admin/category/edit/{category:id}',[Category_Cont::class,'edit']);
     //Category Delete
     Route::get('/admin/category/delete/{category:id}',[Category_Cont::class,'delete']);
+
+
+    //Item List
+    Route::get('/admin/item/list',[Item_Cont::class,'list'])->name('item_list');
+    //Item Create
+    Route::get('/admin/item/create',[Item_Cont::class,'showCreate'])->name('item_create');
+    Route::post('/admin/item/create',[Item_Cont::class,'create']);
+    //Item Edit
+    Route::get('/admin/item/edit/{item:id}',[Item_Cont::class,'showEdit'])->name('item_edit');
+    Route::post('/admin/item/edit/{item:id}',[Item_Cont::class,'edit']);
+    //Item Delete
+    Route::get('/admin/item/delete/{item:id}',[Item_Cont::class,'delete']);
     
 });
