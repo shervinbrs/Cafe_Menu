@@ -52,6 +52,7 @@
                 <li><a href="/admin/item/create">افزودن</a><i class="fa fa-plus"></i></li>
                 <li><a href="/admin/item/list">لیست آیتم ها</a><i class="fa fa-list"></i></li>
             </div>
+            <li><a href="/admin/setting">تنظیمات</a><i class="fa fa-gear"></i></li>
         </ul>
     </div>
     <div class="content">

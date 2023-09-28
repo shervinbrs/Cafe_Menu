@@ -14,5 +14,8 @@ return [
     //Item messages
     'itemCreated'=>'آیتم با موفقیت ساخته شد',
     'itemEdited'=>'آیتم با موفقیت ویرایش شد',
-    'itemDeleted'=>'آیتم با موفقیت حذف شد'
+    'itemDeleted'=>'آیتم با موفقیت حذف شد',
+
+    //Setting messages
+    'settingSaved'=>'تنظیمات با موفقیت ذخیره شد'
 ];

@@ -4,6 +4,7 @@ use App\Http\Controllers\Panel\Dashboard;
 use App\Http\Controllers\Panel\Menu_Cont;
 use App\Http\Controllers\Panel\Category_Cont;
 use App\Http\Controllers\Panel\Item_Cont;
+use App\Http\Controllers\Panel\Setting_Cont;
 
 Route::middleware(['auth','admin'])->group(function(){
 
@@ -44,5 +45,11 @@ Route::middleware(['auth','admin'])->group(function(){
     Route::post('/admin/item/edit/{item:id}',[Item_Cont::class,'edit']);
     //Item Delete
     Route::get('/admin/item/delete/{item:id}',[Item_Cont::class,'delete']);
+
+
+    //Setting Section
+    Route::get('/admin/setting',[Setting_Cont::class,'showSetting'])->name('setting_show');
+    //Setting Save
+    Route::post('/admin/setting',[Setting_Cont::class,'saveSetting']);
     
 });

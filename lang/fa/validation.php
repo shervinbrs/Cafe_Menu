@@ -182,7 +182,8 @@ return [
 
     'attributes' => [
         'name'=>'نام',
-        'icon'=>'آیکون'
+        'icon'=>'آیکون',
+        'cafeName'=>'نام کافه'
     ],
 
 ];
