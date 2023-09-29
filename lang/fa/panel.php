@@ -16,6 +16,11 @@ return [
     'itemEdited'=>'آیتم با موفقیت ویرایش شد',
     'itemDeleted'=>'آیتم با موفقیت حذف شد',
 
+    //User messages
+    'userCreated'=>'کاربر با موفقیت ساخته شد',
+    'userEdited'=>'کاربر با موفقیت ویرایش شد',
+    'userDeleted'=>'کاربر با موفقیت حذف شد',
+
     //Setting messages
     'settingSaved'=>'تنظیمات با موفقیت ذخیره شد'
 ];

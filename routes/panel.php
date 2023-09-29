@@ -5,6 +5,7 @@ use App\Http\Controllers\Panel\Menu_Cont;
 use App\Http\Controllers\Panel\Category_Cont;
 use App\Http\Controllers\Panel\Item_Cont;
 use App\Http\Controllers\Panel\Setting_Cont;
+use App\Http\Controllers\Panel\User_Cont;
 
 Route::middleware(['auth','admin'])->group(function(){
 
@@ -45,6 +46,18 @@ Route::middleware(['auth','admin'])->group(function(){
     Route::post('/admin/item/edit/{item:id}',[Item_Cont::class,'edit']);
     //Item Delete
     Route::get('/admin/item/delete/{item:id}',[Item_Cont::class,'delete']);
+
+    
+    //User List
+    Route::get('/admin/user/list',[User_Cont::class,'list'])->name('user_list');
+    //User Create
+    Route::get('/admin/user/create',[User_Cont::class,'showCreate'])->name('user_create');
+    Route::post('/admin/user/create',[User_Cont::class,'create']);
+    //User Edit
+    Route::get('/admin/user/edit/{user:id}',[User_Cont::class,'showEdit'])->name('user_edit');
+    Route::post('/admin/user/edit/{user:id}',[User_Cont::class,'edit']);
+    //User Deleted
+    Route::get('/admin/user/delete/{user:id}',[User_Cont::class,'delete']);
 
 
     //Setting Section

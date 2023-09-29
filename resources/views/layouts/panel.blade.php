@@ -26,7 +26,9 @@
             <div class="user_menu">
                 <a href="/" target="_blank">مشاهده سایت <i class="fa fa-globe"></i></a>
                 <a href="/admin/user/edit/{{Auth::user()['id']}}">حساب کاربری <i class="fa fa-user"></i></a>
+                <form action="/logout" method="POST">
                 <a href="/logout">خروج <i class="fa fa-sign-out"></i></a>
+                </form>
             </div>
         </div>
     </div>
@@ -51,6 +53,11 @@
             <div class="submenu">
                 <li><a href="/admin/item/create">افزودن</a><i class="fa fa-plus"></i></li>
                 <li><a href="/admin/item/list">لیست آیتم ها</a><i class="fa fa-list"></i></li>
+            </div>
+            <li class="collapase"><a>کاربران</a><i class="fa fa-users"></i><span class="fa fa-angle-down"></span></li>
+            <div class="submenu">
+                <li><a href="/admin/user/create">افزودن</a><i class="fa fa-plus"></i></li>
+                <li><a href="/admin/user/list">لیست کابران</a><i class="fa fa-list"></i></li>
             </div>
             <li><a href="/admin/setting">تنظیمات</a><i class="fa fa-gear"></i></li>
         </ul>
