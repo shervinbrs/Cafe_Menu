@@ -59,6 +59,10 @@
                 <li><a href="/admin/user/create">افزودن</a><i class="fa fa-plus"></i></li>
                 <li><a href="/admin/user/list">لیست کابران</a><i class="fa fa-list"></i></li>
             </div>
+            <li class="collapase"><a>ویجت ها</a><i class="fa fa-layer-group"></i><span class="fa fa-angle-down"></span></li>
+            <div class="submenu">
+                <li><a href="/admin/widget/list">لیست ویجت ها</a><i class="fa fa-list"></i></li>
+            </div>
             <li><a href="/admin/setting">تنظیمات</a><i class="fa fa-gear"></i></li>
         </ul>
     </div>

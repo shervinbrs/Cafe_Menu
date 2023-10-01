@@ -6,6 +6,7 @@ use App\Http\Controllers\Panel\Category_Cont;
 use App\Http\Controllers\Panel\Item_Cont;
 use App\Http\Controllers\Panel\Setting_Cont;
 use App\Http\Controllers\Panel\User_Cont;
+use App\Http\Controllers\Panel\Widget_Cont;
 
 Route::middleware(['auth','admin'])->group(function(){
 
@@ -58,6 +59,13 @@ Route::middleware(['auth','admin'])->group(function(){
     Route::post('/admin/user/edit/{user:id}',[User_Cont::class,'edit']);
     //User Deleted
     Route::get('/admin/user/delete/{user:id}',[User_Cont::class,'delete']);
+
+    
+    //Widget List
+    Route::get('/admin/widget/list',[Widget_Cont::class,'list'])->name('widget_list');
+    //Widget Edit
+    Route::get('/admin/widget/edit/{widget:id}',[Widget_Cont::class,'showEdit'])->name('widget_edit');
+    Route::post('/admin/widget/edit/{widget:id}',[Widget_Cont::class,'edit']);
 
 
     //Setting Section

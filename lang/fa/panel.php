@@ -21,6 +21,10 @@ return [
     'userEdited'=>'کاربر با موفقیت ویرایش شد',
     'userDeleted'=>'کاربر با موفقیت حذف شد',
 
+    //Widegt messages
+    'widgetEdited'=>'ویجت با موفقیت ویرایش شد',
+
     //Setting messages
-    'settingSaved'=>'تنظیمات با موفقیت ذخیره شد'
+    'settingSaved'=>'تنظیمات با موفقیت ذخیره شد',
+
 ];
