@@ -8,6 +8,7 @@ use App\Models\setting;
 use App\Models\menu;
 use App\Models\category;
 use App\Models\item;
+use App\Models\widget;
 
 class Menu_Cont extends Controller
 {
@@ -18,7 +19,8 @@ class Menu_Cont extends Controller
                 'setting'=>setting::get(['name','value','second_value'])->groupBy('name'),
                 'menus'=>menu::all(['id','name','icon']),
                 'categories'=>category::all(['id','name','menu_id']),
-                'items'=>item::all(['id','name','category_id','price','desc','img'])
+                'items'=>item::all(['id','name','category_id','price','desc','img']),
+                'widgets'=>widget::get(['name','content','is_active'])->groupBy('name')
             ]);
     }
 }

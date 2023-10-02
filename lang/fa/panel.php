@@ -27,4 +27,8 @@ return [
     //Setting messages
     'settingSaved'=>'تنظیمات با موفقیت ذخیره شد',
 
+
+    //Seeder messages
+    'aboutUs'=>'درباره ما',
+    'alert'=>'پیام اطلاع رسانی'
 ];

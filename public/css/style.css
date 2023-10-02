@@ -60,9 +60,30 @@ body{
 .menu-item img{
 	border-radius:5px;
 }
+.price{
+	position:absolute;
+	bottom:0;
+	font-size:15px;
+	white-space:nowrap
+}
 #navbar{
 	transition: 0.3s;
 	overflow: hidden;
+}
+#navbar i{
+	position: absolute; 
+	right:20px;
+	font-size:18px;
+	padding:4px 13px 7px 13px;
+	border:1px solid #333333;
+	border-radius: 3px;
+	color:white;
+	background:#333333 !important
+}
+#navbar i:hover{
+	transition: 0.3s;
+	color:#17B890 !important;
+	cursor:pointer
 }
 .menu-item .card-body div h6:nth-child(2){
 	-webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
@@ -79,13 +100,19 @@ body{
 	margin: 15px 10px;
 	flex-grow:1;
 }
-.price{
-	white-space: nowrap;
-}
 ::-webkit-scrollbar {
     width: 5px;
   }
   ::-webkit-scrollbar-thumb{
     background: linear-gradient(to right, #5f2c82, #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  }
+  .modal-title{
+	margin-right:20px;
+  }
+  .modal-header button{
+	position: absolute;
+  }
+  .modal-body{
+	  text-align: right;
   }

@@ -19,9 +19,17 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         //     'username'=>'09350000000'
         // ]);
-        \App\Models\Setting::create([
+        \App\Models\setting::create([
             'name'=>'cafeName',
             'value'=>'default'
+        ]);
+        \App\Models\widget::create([
+            'name'=>'aboutUs',
+            'type'=>'ckeditor'
+        ]);
+        \App\Models\widget::create([
+            'name'=>'alert',
+            'type'=>'input'
         ]);
     }
 }

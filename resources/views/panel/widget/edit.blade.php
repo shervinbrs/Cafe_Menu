@@ -17,13 +17,13 @@
                     </div>
                     <div class="input d25 block center">
                         <span>نام ویجت : </span>
-                        <input type="text" placeholder="نام" value="{{$widget['name']}}" disabled>
+                        <input type="text" placeholder="نام" value="{{__('panel.'.$widget['name'])}}" disabled>
                     </div>
                     <div class="input d100 block center">
                         <span>محتوا :</span>
                         @switch($widget['type'])
                         @case('input')
-                        <div class="d50">
+                        <div class="d50 center">
                         <input type="text" name="content" placeholder="محتوا" value="{{$widget['name']}}">
                         </div>
                         @break

@@ -23,7 +23,7 @@
                     @foreach ($widgets as $item)
                     <tr>
                         <td>{{$item['id']}}</td>
-                        <td>{{$item['name']}}</td>
+                        <td>{{__('panel.'.$item['name'])}}</td>
                             @if($item['is_active'])
                             <td style="color:green;">
                                 فعال
