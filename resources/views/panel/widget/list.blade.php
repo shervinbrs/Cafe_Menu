@@ -33,7 +33,17 @@
                                 غیرفعال
                             </td>
                             @endif
-                        <td class="text-center"><a href="/admin/widget/edit/{{$item['id']}}" class="button button-information-light">ویرایش</a></td>
+                        <td class="text-center"><a href="/admin/widget/edit/{{$item['id']}}" class="button button-information-light">ویرایش</a> 
+                            @if($item['is_active'])
+                            <a href="/admin/widget/toggle/{{$item['id']}}" class="button button-danager-light">
+                                غیرفعال
+                            </a>
+                            @else
+                            <a href="/admin/widget/toggle/{{$item['id']}}" class="button button-success-light">
+                                فعال
+                            </a>
+                            @endif
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
@@ -53,17 +63,4 @@
     @endfor
 </div>
 @endif
-<script>
-    $('.button-danager-light').on('click',function(event)
-    {
-        let fbutton = this;
-        event.preventDefault();
-        alertify.confirm('حذف ویجت', 'از حذف ویجت اطمینان دارید؟', function(){
-            window.location = $(fbutton).attr('href');
-             }
-                , function(){ 
-                    event.preventDefault();
-                    }).set('labels',{ok:'حذف',cancel:'انصراف'});
-    });
-</script>
 @endsection

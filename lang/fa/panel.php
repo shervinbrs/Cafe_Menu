@@ -20,13 +20,19 @@ return [
     'userCreated'=>'کاربر با موفقیت ساخته شد',
     'userEdited'=>'کاربر با موفقیت ویرایش شد',
     'userDeleted'=>'کاربر با موفقیت حذف شد',
+    'selfDelete'=>'امکان حذف حساب کاربری خود وجود ندارد',
 
     //Widegt messages
     'widgetEdited'=>'ویجت با موفقیت ویرایش شد',
+    'widgetStatus'=>'وضعیت ویجت با موفقیت تغییر کرد',
 
     //Setting messages
     'settingSaved'=>'تنظیمات با موفقیت ذخیره شد',
 
+    //EVent messages
+    'eventCreated'=>'رویداد با موفقیت ایجاد شد',
+    'eventEdited'=>'رویداد با موفقیت ویرایش شد',
+    'eventDeleted'=>'رویداد با موفقیت حذف شد',
 
     //Seeder messages
     'aboutUs'=>'درباره ما',

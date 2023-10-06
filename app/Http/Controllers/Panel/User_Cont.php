@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Panel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
 class User_Cont extends Controller
@@ -54,6 +55,10 @@ class User_Cont extends Controller
     }
     public function delete(User $user)
     {
+        if($user->id == Auth::user()['id'])
+        {
+            return redirect()->route('user_list')->withErrors(['msg'=>__('panel.selfDelete')]);
+        }
         $user->delete();
         return redirect()->route('user_list')->withSuccess(__('panel.userDeleted'));
     }

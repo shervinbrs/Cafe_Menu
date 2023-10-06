@@ -7,6 +7,7 @@ use App\Http\Controllers\Panel\Item_Cont;
 use App\Http\Controllers\Panel\Setting_Cont;
 use App\Http\Controllers\Panel\User_Cont;
 use App\Http\Controllers\Panel\Widget_Cont;
+use App\Http\Controllers\Panel\Event_Cont;
 
 Route::middleware(['auth','admin'])->group(function(){
 
@@ -66,6 +67,20 @@ Route::middleware(['auth','admin'])->group(function(){
     //Widget Edit
     Route::get('/admin/widget/edit/{widget:id}',[Widget_Cont::class,'showEdit'])->name('widget_edit');
     Route::post('/admin/widget/edit/{widget:id}',[Widget_Cont::class,'edit']);
+    //Widget Toggle
+    Route::get('/admin/widget/toggle/{widget:id}',[Widget_Cont::class,'toggle']);
+
+
+    //Event List
+    Route::get('/admin/event/list',[Event_Cont::class,'list'])->name('event_list');
+    //Event Create
+    Route::get('/admin/event/create',[Event_Cont::class,'showCreate'])->name('event_create');
+    Route::post('/admin/event/create',[Event_Cont::class,'create']);
+    //Event Edit
+    Route::get('/admin/event/edit/{event:id}',[Event_Cont::class,'showEdit'])->name('event_edit');
+    Route::post('/admin/event/edit/{event:id}',[Event_Cont::class,'edit']);
+    //Event Delete
+    Route::get('/admin/event/delete/{event:id}',[Event_Cont::class,'delete']);
 
 
     //Setting Section

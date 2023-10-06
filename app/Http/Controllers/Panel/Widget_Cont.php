@@ -27,4 +27,9 @@ class Widget_Cont extends Controller
         $widget->update($widget_info);
         return redirect()->route('widget_edit',$widget->id)->withSuccess(__('panel.widgetEdited'));
     }
+    public function toggle(widget $widget)
+    {
+        $widget->update(['is_active'=>$widget['is_active'] ^ 1]);
+        return redirect()->route('widget_list')->withSuccess(__('panel.widgetStatus'));
+    }
 }
