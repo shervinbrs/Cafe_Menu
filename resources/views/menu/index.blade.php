@@ -29,11 +29,17 @@
         </div>
       </div>
       @endif
+      @if($widgets['event'][0]['is_active'])
+      <x-Events/>
+      @endif
     <div class="container-fluid text-center position-fixed menu-navigator">
         <div class="row">
             <div class="col-md-12 mt-4 mb-3" id="navbar">
                 @if($widgets['aboutUs'][0]['is_active'])
                 <i class="fa fa-info" data-toggle="modal" data-target="#exampleModalCenter"></i>
+                @endif
+                @if($widgets['event'][0]['is_active'])
+                <i class="fa fa-calendar" data-toggle="modal" data-target="#eventsModal"></i>
                 @endif
                 <h1 class="h5">{{$setting['cafeName'][0]['value']}}</h1>
             </div>

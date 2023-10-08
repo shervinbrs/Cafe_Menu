@@ -36,5 +36,6 @@ return [
 
     //Seeder messages
     'aboutUs'=>'درباره ما',
-    'alert'=>'پیام اطلاع رسانی'
+    'alert'=>'پیام اطلاع رسانی',
+    'event'=>'رویداد ها'
 ];

@@ -34,6 +34,10 @@
                             </textarea>
                         </div>
                         @break
+                        @case('section')
+                        <div class="d75 center">
+                            * این ویجت دارای بخش مجزا برای ویرایش محتوا است *
+                        </div>
                         @endswitch
                     </div>
                     <div class="d75 center">

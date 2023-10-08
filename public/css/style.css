@@ -60,12 +60,6 @@ body{
 .menu-item img{
 	border-radius:5px;
 }
-.price{
-	position:absolute;
-	bottom:0;
-	font-size:15px;
-	white-space:nowrap
-}
 #navbar{
 	transition: 0.3s;
 	overflow: hidden;
@@ -75,6 +69,16 @@ body{
 	right:20px;
 	font-size:18px;
 	padding:4px 13px 7px 13px;
+	border:1px solid #333333;
+	border-radius: 3px;
+	color:white;
+	background:#333333 !important
+}
+#navbar i:nth-child(2){
+	position: absolute; 
+	right:65px;
+	font-size:18px;
+	padding:4px 8px 7px 8px;
 	border:1px solid #333333;
 	border-radius: 3px;
 	color:white;
@@ -115,4 +119,34 @@ body{
   }
   .modal-body{
 	  text-align: right;
+  }
+  .eventModal .card-body{
+	  max-height: 160px;
+  }
+  .eventModal .card-body div span{
+	background:#17B890;
+	color:white;
+	 padding:2px 5px;
+	 top:30px;
+	 border-radius:10px;
+	 position: absolute;
+	 left:10px;
+	 width: 125px;
+	 max-width: 125px;
+	 overflow: hidden;
+  }
+  .eventModal .card-body div span:nth-child(2){
+	background:#17B890;
+	color:white;
+	 padding:2px 5px;
+	 top:3px;
+	 border-radius:10px;
+	 position: absolute;
+	 left:10px;
+	 width: 125px;
+  }
+  .eventModal .card-body div p{
+	  margin-top:15px;
+	  max-height: 65px;
+	  overflow: hidden;
   }

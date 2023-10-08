@@ -31,5 +31,9 @@ class DatabaseSeeder extends Seeder
             'name'=>'alert',
             'type'=>'input'
         ]);
+        \App\Models\widget::create([
+            'name'=>'event',
+            'type'=>'section'
+        ]);
     }
 }
