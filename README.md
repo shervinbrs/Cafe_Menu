@@ -10,18 +10,20 @@ make your own cafe menu with advanced detail
 - Category Full Manage
 - Item Full Manage
 - General Setting
+- Widgets Full Manage
 - Authentication
 
 ## Technologies Used
 
 - Laravel Framework 10.24.0
 
-### Screenshots
+## Screenshots
 
 ![Menu](/screenshots/menu.png)
 ![Dashboard](/screenshots/dashboard.png)
-![Panel](/screenshots/panel.png)
-![Item](/screenshots/item.png)
+![Menus](/screenshots/menus.png)
+![Item](/screenshots/widgets.png)
+![Widgets](/screenshots/item.png)
 
 ## Setup
 
